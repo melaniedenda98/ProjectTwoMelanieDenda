@@ -7,7 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    
+    //Bucket List Variable
+    var myBucketList = ["Learn to cook Japanese Food", "Visit Paris", "Visit Italy", "Visit Africa", "Earn 2 Nanodegrees"]
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return myBucketList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
+        let text = myBucketList[indexPath.row]
+        cell?.textLabel?.text = text
+        return cell!
+    }
+    
 
     //Tab Labels
     @IBOutlet weak var firstTabLabel: UILabel!

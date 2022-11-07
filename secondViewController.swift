@@ -9,14 +9,25 @@ import UIKit
 
 class secondViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var secondTabLabel: UILabel!
+    @IBOutlet weak var displayLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        displayLabel.text = ""
     }
     
-
+    @IBAction func buttonPressed(_ sender: Any) {
+        
+        let userInputText = textField.text
+        var textConversion: Int = 0
+        textConversion = userInputText.text.toInt()!
+        displayLabel.text = userInputText
+    }
+    
     /*
     // MARK: - Navigation
 

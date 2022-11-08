@@ -1,5 +1,5 @@
 //
-//  secondViewController.swift
+//  detailViewController.swift
 //  ProjectTwoMelanieDenda
 //
 //  Created by user226981 on 11/7/22.
@@ -7,27 +7,15 @@
 
 import UIKit
 
-class secondViewController: UIViewController {
+class detailViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
-    @IBOutlet weak var secondTabLabel: UILabel!
-    @IBOutlet weak var displayLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        displayLabel.text = ""
     }
     
-    @IBAction func buttonPressed(_ sender: Any) {
-        
-        let userInputText = textField.text
-        	
-        print ("The weather today")
-        displayLabel.text = userInputText
-    }
-    
+
     /*
     // MARK: - Navigation
 

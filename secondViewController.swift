@@ -26,12 +26,12 @@ class secondViewController: UIViewController {
         
     
       let userInputText = textField.text
-        var string = userInputText
         let label = UILabel()
-       
+       var fahrenheit = Float(50)
+        var celsius = (fahrenheit-32)*(5/9)
     
-        
-        label.text = "The weather is\(String(describing: userInputText)))"
+        let temperatureConverter = "The weather is \(celsius) degrees celsius"
+        label.text = "The weather is\(String(describing: userInputText)) degrees celsius)"
         displayLabel.text = (label.text)
         
         /*

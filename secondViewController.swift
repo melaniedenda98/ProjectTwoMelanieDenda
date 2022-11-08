@@ -8,14 +8,16 @@
 import UIKit
 
 class secondViewController: UIViewController {
-    
+
+
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var secondTabLabel: UILabel!
     @IBOutlet weak var displayLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         // Do any additional setup after loading the view.
+
         
         displayLabel.text = ""
     }

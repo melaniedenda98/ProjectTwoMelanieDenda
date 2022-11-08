@@ -4,11 +4,13 @@
 //
 //  Created by user226981 on 11/7/22.
 //
-
 import UIKit
 
 class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
+    // ACCIDENTALLY ADDED IMAGES THE WRONG WAY BUT I DIDNT WANT TO CHANGE CODE BECAUSE
+    //WHEN  I DID IT KEPT GOING INTO ERRORS SO THERE ARE SOME CODE THAT IS UNNECCESSARY
+    // I ACCIDENTALLY APPLIED HACKWICH 10 TO THIS BUT I DONT THINK IT WAS NEEDE SORRY
     @IBOutlet weak var imageView: UIImageView!
     var imagePass: String?
     //Bucket List Variable
@@ -28,7 +30,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         
         
         self.firstTabLabel.text = "My Name is:"
-        self.mysecondLabel.text = "Melanie"
+        self.mysecondLabel.text = "Melanie Denda"
         self.thirdTabLabel.text = "My Major is:"
         self.fourthTabLabel.text = "CM: Design and Media"
         self.fiftthTabLabel.text = "My Spring 2022 Classes are:"
@@ -58,12 +60,6 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     @IBOutlet weak var fiftthTabLabel: UILabel!
     
  
-    //override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-      //  let s1 = segue.destination as! ViewController
-        //let imageIndex = tableViww.indexPathForSelectedRow?.row
-        //s1.imagePass = logoImageData[imageIndex!]
-  //  }
-
+   
 
 }
-

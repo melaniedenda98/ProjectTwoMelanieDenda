@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Weather-->
+        <!--Weather Converter-->
         <scene sceneID="YCU-AU-4iU">
             <objects>
                 <viewController id="XtP-I6-wAZ" customClass="secondViewController" customModule="ProjectTwoMelanieDenda" customModuleProvider="target" sceneMemberID="viewController">
@@ -43,7 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="cdO-4v-51r"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Weather" id="57d-Zg-hYE"/>
+                    <navigationItem key="navigationItem" title="Weather Converter" id="57d-Zg-hYE"/>
                     <connections>
                         <outlet property="displayLabel" destination="Xyh-6j-dFz" id="cNf-KI-DaD"/>
                         <outlet property="secondTabLabel" destination="Xyh-6j-dFz" id="hCA-0i-BMO"/>

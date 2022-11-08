@@ -24,7 +24,9 @@ class secondViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: Any) {
         
-        let userInputText = textField.text
+    
+      let userInputText = textField.text
+        var string = userInputText
         let label = UILabel()
        
     

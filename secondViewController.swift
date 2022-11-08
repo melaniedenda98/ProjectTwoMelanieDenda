@@ -8,13 +8,13 @@
 import UIKit
 
 class secondViewController: UIViewController {
-
+    
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var secondTabLabel: UILabel!
     @IBOutlet weak var displayLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         displayLabel.text = ""
@@ -23,19 +23,22 @@ class secondViewController: UIViewController {
     @IBAction func buttonPressed(_ sender: Any) {
         
         let userInputText = textField.text
-        	
-        print ("The weather today")
-        displayLabel.text = userInputText
-    }
+        let label = UILabel()
+       
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        
+        label.text = "The weather is\(String(describing: userInputText)))"
+        displayLabel.text = (label.text)
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
     }
-    */
-
 }

@@ -6,24 +6,10 @@
 //
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+class ViewController: UIViewController {
  
-    //Bucket List Variable
-    var myBucketList = ["Learn to cook Japanese Food", "Visit Paris", "Visit Italy", "Visit Africa", "Earn 2 Nanodegrees"]
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myBucketList.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")
-        let text = myBucketList[indexPath.row]
-        cell?.textLabel?.text = text
-        return cell!
-    }
-    // ACCIDENTALLY ADDED IMAGES THE WRONG WAY BUT I DIDNT WANT TO CHANGE CODE BECAUSE
-    //WHEN  I DID IT KEPT GOING INTO ERRORS SO THERE ARE SOME CODE THAT IS UNNECCESSARY
-    // I ACCIDENTALLY APPLIED HACKWICH 10 TO THIS BUT I DONT THINK IT WAS NEEDED SORRY
+ 
     @IBOutlet weak var imageView: UIImageView!
     var imagePass: String?
 

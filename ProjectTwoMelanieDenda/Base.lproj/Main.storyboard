@@ -135,7 +135,6 @@
         <!--Bucket List-->
         <scene sceneID="5iA-6V-VGL">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xK3-lT-t5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="FcR-WC-ZfF" customClass="thirdViewController" customModule="ProjectTwoMelanieDenda" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tE4-gq-vC3">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -166,8 +165,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Bucket List" id="iRy-PZ-Mxp"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xK3-lT-t5T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2304.5801526717555" y="1231.6901408450706"/>
+            <point key="canvasLocation" x="1378" y="1232"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nMl-Jp-5gh">
@@ -243,7 +243,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3K-9X-8Qs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1379.3893129770993" y="1231.6901408450706"/>
+            <point key="canvasLocation" x="453" y="1232"/>
         </scene>
     </scenes>
     <resources>
